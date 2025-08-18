@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.16/framer-motion.cjs.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      .font-dancing-script {
+        font-family: 'Dancing Script', cursive;
+      }
+      .font-cursive{
+        font-family: 'cursive';
+      }
+      /* A subtle background pattern using SVG */
+      .bg-pattern {
+        background-color: #fff0f3;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffc6d1' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+      
+      /* New Animated Gradient Background */
+      .animated-gradient-background {
+        background: linear-gradient(315deg, #ffafcc, #bde0fe, #ffc8dd, #cdb4db);
+        background-size: 400% 400%;
+        animation: gradient-flow 15s ease infinite;
+      }
+
+      @keyframes gradient-flow {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+      }
+
+      /* 3D Carousel Styles */
+      .carousel-container {
+        perspective: 1000px;
+      }
+
+      .carousel {
+        position: relative;
+        width: 210px;
+        height: 320px;
+        transform-style: preserve-3d;
+        animation: rotate 20s infinite linear;
+      }
+
+      .carousel-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0004);
+      }
+      
+      /* Assigning rotation to each item */
+      .carousel-item:nth-child(1) { transform: rotateY(0deg) translateZ(320px); }
+      .carousel-item:nth-child(2) { transform: rotateY(40deg) translateZ(320px); }
+      .carousel-item:nth-child(3) { transform: rotateY(80deg) translateZ(320px); }
+      .carousel-item:nth-child(4) { transform: rotateY(120deg) translateZ(320px); }
+      .carousel-item:nth-child(5) { transform: rotateY(160deg) translateZ(320px); }
+      .carousel-item:nth-child(6) { transform: rotateY(200deg) translateZ(320px); }
+      .carousel-item:nth-child(7) { transform: rotateY(240deg) translateZ(320px); }
+      .carousel-item:nth-child(8) { transform: rotateY(280deg) translateZ(320px); }
+      .carousel-item:nth-child(9) { transform: rotateY(320deg) translateZ(320px); }
+
+      @keyframes rotate {
+        from { transform: rotateY(0deg); }
+        to { transform: rotateY(-360deg); }
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.12"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-CzLpKg7j.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
