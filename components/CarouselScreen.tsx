@@ -21,7 +21,7 @@ const CarouselScreen: React.FC<CarouselScreenProps> = ({ name }) => {
             
             <div className="absolute bottom-1/4 transform -translate-y-1/2 text-center">
                 <h2 className="text-5xl md:text-7xl font-dancing-script text-indigo-900 drop-shadow-[0_2px_2px_rgba(255,255,255,0.9)]">
-                    Happy Birthday, {name}!
+                    Happy Birthday, {name}💖
                 </h2>
             </div>
         </div>
