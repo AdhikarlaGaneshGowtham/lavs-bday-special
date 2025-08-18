@@ -5,8 +5,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: '/lavs-bday-special/', // <-- move base inside the returned object
-
+    base: '/lavs-bday-special/', 
+    assetsInclude: ['**/*.mp3'],
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)

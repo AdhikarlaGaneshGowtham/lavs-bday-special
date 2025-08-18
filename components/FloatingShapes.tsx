@@ -7,7 +7,7 @@ const shapes = Array.from({ length: 25 });
 const colors = [
     'rgba(255, 182, 193, 0.7)', // light pink
     'rgba(255, 105, 180, 0.7)', // hot pink
-    'rgba(255, 240, 245, 0.9)', // almost white pink
+    'rgba(223, 24, 90, 0.9)', // almost white pink
 ];
 
 const FloatingShapes: React.FC = () => {
@@ -15,8 +15,8 @@ const FloatingShapes: React.FC = () => {
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
             {shapes.map((_, i) => {
                 const size = Math.random() * 50 + 20;
-                const duration = Math.random() * 20 + 15;
-                const delay = Math.random() * 10;
+                const duration = Math.random() *10 +4;
+                const delay = Math.random() *5 +2;
                 
                 return (
                     <motion.div
@@ -32,7 +32,7 @@ const FloatingShapes: React.FC = () => {
                             y: -20,
                             opacity: [0, 1, 0],
                             scale: [1, 1.2, 1],
-                            rotate: Math.random() * 40 - 20,
+                            rotate: Math.random() * 40 ,
                         }}
                         transition={{
                             duration,
